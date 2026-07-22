@@ -17,7 +17,7 @@ class _CartCardState extends State<CartCard> {
   void _increment() => setState(() => widget.item.quantity++);
 
   void _decrement() {
-    if (widget.item.quantity > 1) {
+    if (widget.item.quantity > 0) {
       setState(() => widget.item.quantity--);
     }
   }
